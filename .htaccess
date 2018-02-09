@@ -2,7 +2,7 @@
 Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^hacking-php-game.appspot.com[nc]
-RewriteRule ^(.*)$ http://www.hacking-php-game.appspot.com/$1 [r=301,nc]
+RewriteRule ^(.*)$ http://www.hacking-php-game.appspot.com$1 [r=301,nc]
 
 //Custom 400 errors
 ErrorDocument 400 /home/www/401.html
@@ -20,7 +20,7 @@ ErrorDocument 404 /home/www/404.html
 ErrorDocument 500 /home/www/500.html
 
 //Change default directory page
-DirectoryIndex /home/www/index.php
+DirectoryIndex /home/www/
 
 //Prevent viewing of .htaccess file
 <Files .htaccess>
