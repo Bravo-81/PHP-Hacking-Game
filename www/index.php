@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>V1</title>
+<title>V2</title>
 </head>
 <body>
 <?php
