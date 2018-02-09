@@ -1,18 +1,10 @@
 <?php
-/* Database credentials. Assuming you are running MySQL
-server with default setting (user 'root' with no password) */
-define('DB_SERVER', 'http://35.197.200.94/');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'gmmwE5pmdpMw0bAN');
-define('DB_NAME', 'mysql');
- 
-/* Attempt to connect to MySQL database */
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
- 
-// Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-} else {
-	echo "Connected!";
-}
+	echo "Hello there, stranger!";
+
+// mysqli
+$mysqli = new mysqli("35.197.200.94", "hack_dbadmin", "gm256mwE5pmdpMw0bAN", "mysql");
+$result = $mysqli->query("SELECT 'Hello, dear MySQL user!' AS _message FROM mysql");
+$row = $result->fetch_assoc();
+echo htmlentities($row['_message']);
+
 ?>
