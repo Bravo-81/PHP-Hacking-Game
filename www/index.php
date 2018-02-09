@@ -1,3 +1,8 @@
+<html>
+<head>
+<title>V1</title>
+</head>
+<body>
 <?php
 	echo "Init\n";
 
@@ -29,3 +34,5 @@ $row = $result->fetch_array(MYSQLI_BOTH);
 printf ("%s (%s)\n", $row[0], $row["EmailAd"]);
 
 ?>
+</body>
+</html>
