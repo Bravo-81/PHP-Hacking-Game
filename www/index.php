@@ -3,7 +3,7 @@
 
 /* mysqli */
 	echo "MySQLi Settings\n";
-$mysqli = new mysqli("35.197.200.94", "hack_dbadmin", "gm256mwE5pmdpMw0bAN", "PHPHackGame");
+$mysqli = new mysqli(35.197.200.94, 'hack_dbadmin', 'gm256mwE5pmdpMw0bAN', PHPHackGame, null, '/cloudsql/hacking-php-game:europe-west2:hacks-db01');
 
 	echo "Connection Attempt\n";
 /* check connection */
