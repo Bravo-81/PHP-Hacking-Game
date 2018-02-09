@@ -1,7 +1,7 @@
 <?php
 	echo "Hello there, stranger!";
 
-// mysqli
+/* mysqli */
 $mysqli = new mysqli("35.197.200.94", "hack_dbadmin", "gm256mwE5pmdpMw0bAN", "PHPHackGame");
 
 /* check connection */
