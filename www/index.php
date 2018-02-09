@@ -8,7 +8,8 @@
 
 /* mysqli */
 	echo "MySQLi Settings\n";
-$mysqli = new mysqli(:/cloudsql/hacking-php-game:europe-west2:hacks-db01, 'hack_dbadmin', 'gm256mwE5pmdpMw0bAN');
+	$dbhost = ":/cloudsql/hacking-php-game:europe-west2:hacks-db01";
+$mysqli = new mysqli($dbhost, 'root', '');
 
 	echo "Connection Attempt\n";
 /* check connection */
